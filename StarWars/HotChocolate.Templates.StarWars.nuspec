@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>HotChocolate.Templates.StarWars</id>
+    <version>0.2.0</version>
+    <description>
+      Creates a GraphQL Star Wars Demo
+    </description>
+    <authors>Michael Staib</authors>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata>
+</package>
