@@ -1,1 +1,1 @@
-nuget.exe
+nuget.exe pack StarWars\HotChocolate.Templates.StarWars.nuspec
