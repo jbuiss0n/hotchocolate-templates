@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="HotChocolate.AspNetCore" Version="0.2.0" />
+    <PackageReference Include="HotChocolate.AspNetCore" Version="0.2.2" />
   </ItemGroup>
 
 </Project>
