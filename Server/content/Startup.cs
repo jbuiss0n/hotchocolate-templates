@@ -21,10 +21,11 @@ namespace HotChocolate.Server
             // services.AddSingleton<Query>();
 
             // Add GraphQL Services
-            services.AddGraphQL(c => 
+            services.AddGraphQL(sp => Schema.Create(c => 
             {
-                c.RegisterQueryType<ObjectType<Query>>();
-            });
+                c.RegisterServiceProvider(sp);
+                c.RegisterQueryType<Query>();
+            }));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

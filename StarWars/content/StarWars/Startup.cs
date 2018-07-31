@@ -24,14 +24,17 @@ namespace StarWars
             services.AddSingleton<Mutation>();
 
             // Add GraphQL Services
-            services.AddGraphQL(c =>
+            services.AddGraphQL(sp => Schema.Create(c =>
             {
+                c.RegisterServiceProvider(sp);
+
                 c.RegisterQueryType<QueryType>();
                 c.RegisterMutationType<MutationType>();
+
                 c.RegisterType<HumanType>();
                 c.RegisterType<DroidType>();
                 c.RegisterType<EpisodeType>();
-            });
+            }));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
